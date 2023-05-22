@@ -1,6 +1,6 @@
 function solution(age) {
     var answer = '';
-    var abc = "abcdefghijklmnopqrwstuvwxyz";
+    var abc = "abcdefghij";
     for(const val of age.toString()){
         answer += abc[val]
     }
