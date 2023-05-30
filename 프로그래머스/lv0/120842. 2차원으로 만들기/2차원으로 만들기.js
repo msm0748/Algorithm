@@ -1,14 +1,9 @@
 function solution(num_list, n) {
     var answer = [];
-    var arr = []
-    for(let i = 1; i <= num_list.length; i++){
-        if(i % n !== 0){
-            arr.push(num_list[i - 1]);
-        }else{
-            arr.push(num_list[i - 1]);
-            answer.push(arr);
-            arr = [];
+    num_list.forEach((_, i) => {
+        if(i % n === 0){
+            answer.push(num_list.slice(i,i + n));            
         }
-    }
+    });
     return answer;
 }
