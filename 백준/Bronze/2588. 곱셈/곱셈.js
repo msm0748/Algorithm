@@ -1,4 +1,4 @@
-const input = require("fs").readFileSync("/dev/stdin").toString().split("\n");
+const input = require("fs").readFileSync(0).toString().split("\n");
 const num1 = Number(input[0]);
 const num2 = input[1];
 console.log(num1 * Number(num2[2]));
