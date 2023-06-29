@@ -2,12 +2,12 @@ function solution(num_list) {
     var odd = num_list.filter((num, i) => (i + 1) % 2 === 1);
     var even = num_list.filter((num, i) => (i + 1) % 2 === 0);
     
-    odd = odd.reduce(function add(sum, currValue) {
-      return sum + currValue;
-    }, 0);
-    even = even.reduce(function add(sum, currValue) {
-      return sum + currValue;
-    }, 0);
+    function calculateSum(arr){
+        return arr.reduce((acc, cur) => acc + cur);
+    }
+    
+    odd = calculateSum(odd);
+    even = calculateSum(even);
     
     return odd > even ? odd : even;
 }
