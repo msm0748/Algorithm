@@ -1,6 +1,3 @@
 function solution(num_list, n) {
-    if(num_list.includes(n)){
-        return 1;
-    }
-    return 0;
+    return num_list.find(v => v === n) ? 1 : 0;
 }
