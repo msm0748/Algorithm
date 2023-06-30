@@ -1,7 +1,4 @@
 function solution(num_str) {
-    var answer = 0;
-    for(const val of num_str){
-        answer += Number(val)
-    }
+    var answer = [...num_str].map(Number).reduce((acc, cur) => acc + cur, 0);
     return answer;
 }
