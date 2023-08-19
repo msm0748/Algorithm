@@ -1,5 +1,5 @@
 function solution(n) {
-    var answer = [];
+    const answer = [];
     answer.push(n);
     while(n !== 1){
         if(n % 2 === 0){
